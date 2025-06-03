@@ -16,7 +16,7 @@ import { CheckCircle, Loader } from "lucide-react";
 
 const Register = () => {
   const [formValues, setFormValues] = useState({
-    fullName: "",
+    name: "",
     email: "",
     phoneNumber: "",
     department: "",
@@ -31,7 +31,7 @@ const Register = () => {
 
   const { isPending, mutate } = useMutation({
     mutationFn: (data: {
-      fullName: string;
+      name: string;
       email: string;
       phoneNumber: string;
       department: string;
@@ -64,7 +64,7 @@ const Register = () => {
           >
             <input
               type="text"
-              name="fullName"
+              name="name"
               placeholder="Enter your name"
               onChange={onValueChange}
               className="border border-[#DBE0E5] p-2 text-sm w-full rounded-lg placeholder:text-[#DBE)]"
