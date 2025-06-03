@@ -112,7 +112,7 @@ const Register = () => {
 
             <Select
               onValueChange={(value) =>
-                setFormValues((prev) => ({ ...prev, department: value }))
+                setFormValues((prev) => ({ ...prev, level: value }))
               }
               required
             >
